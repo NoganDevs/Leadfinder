@@ -7,8 +7,8 @@ import os
 import re
 
 # Credentials from Vercel Env Variables
-SUPABASE_URL = os.environ.get("SUPABASE_URL")
-SUPABASE_KEY = os.environ.get("SUPABASE_KEY")
+SUPABASE_URL = os.environ.get("https://ksmkkrzwpnqnvgckwxja.supabase.co")
+SUPABASE_KEY = os.environ.get("eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtzbWtrcnp3cG5xbnZnY2t3eGphIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDUzODkxNDcsImV4cCI6MjA2MDk2NTE0N30.JtyEZ3CG-x8BuVhgVr7UyD_-gwI4y-_vvo8x-96hXSw")
 supabase = create_client(SUPABASE_URL, SUPABASE_KEY)
 
 def sniffer_email(text):
